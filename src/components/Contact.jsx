@@ -112,7 +112,7 @@ const Contact = () => {
   ]
 
   const socialLinks = [
-    { icon: FaLinkedin, link: 'https://linkedin.com/in/kanishkashra', label: 'LinkedIn', color: 'accent-secondary' },
+    { icon: FaLinkedin, link: 'https://www.linkedin.com/in/kanishkashra/', label: 'LinkedIn', color: 'accent-secondary' },
     { icon: FaGithub, link: 'https://github.com/ashra1-ai', label: 'GitHub', color: 'accent-primary' },
   ]
 

@@ -50,7 +50,7 @@ const Hero = () => {
             <div className="flex items-center gap-4 pt-4 animate-slide-up" style={{ animationDelay: '0.6s' }}>
               {[
                 { icon: FaGithub, href: 'https://github.com/ashra1-ai', color: 'accent-primary', label: 'GitHub' },
-                { icon: FaLinkedin, href: 'https://linkedin.com/in/kanishkashra', color: 'accent-secondary', label: 'LinkedIn' },
+                { icon: FaLinkedin, href: 'https://www.linkedin.com/in/kanishkashra/', color: 'accent-secondary', label: 'LinkedIn' },
                 { icon: FaEnvelope, href: 'mailto:kanishkashra@gmail.com', color: 'accent-tertiary', label: 'Email' },
               ].map((social, index) => {
                 const Icon = social.icon

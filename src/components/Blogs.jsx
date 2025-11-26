@@ -17,7 +17,7 @@ const Blogs = () => {
       platform: 'LinkedIn',
       date: 'Nov 2024',
       excerpt: 'Deep dive into adversarial attacks and defense mechanisms in neural networks, focusing on practical applications and research insights.',
-      link: 'https://linkedin.com/in/kanishkashra',
+      link: 'https://www.linkedin.com/in/kanishkashra/',
       icon: FaLinkedin,
       color: 'accent-secondary',
     },

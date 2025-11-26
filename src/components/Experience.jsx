@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBriefcase, FaGraduationCap } from 'react-icons/fa'
+import { FaBriefcase, FaGraduationCap, FaLinkedin, FaExternalLinkAlt } from 'react-icons/fa'
 
 const Experience = () => {
   const [expandedIndex, setExpandedIndex] = useState(null)
@@ -200,6 +200,23 @@ const Experience = () => {
                               </li>
                             ))}
                           </ul>
+                          {/* LinkedIn Link */}
+                          <div className="mt-4 ml-16 pt-4 border-t border-dark-border/50">
+                            <a
+                              href={exp.type === 'work' 
+                                ? 'https://www.linkedin.com/in/kanishkashra/detail/experience/'
+                                : 'https://www.linkedin.com/in/kanishkashra/detail/education/'
+                              }
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              onClick={(e) => e.stopPropagation()}
+                              className={`inline-flex items-center gap-2 ${colors.text} text-sm font-semibold hover:translate-x-1 transition-transform duration-300 group/link`}
+                            >
+                              <FaLinkedin className="text-base" />
+                              <span>View on LinkedIn</span>
+                              <FaExternalLinkAlt className="text-xs group-hover/link:translate-x-0.5 transition-transform duration-300" />
+                            </a>
+                          </div>
                         </div>
                         
                         {/* Expand/Collapse Indicator */}
