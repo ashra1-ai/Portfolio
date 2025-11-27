@@ -19,21 +19,9 @@ const About = () => {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Unique Image Placeholder */}
-          <div className="relative animate-slide-up group">
-            <div className="relative aspect-square card-1dp flex items-center justify-center overflow-hidden rounded-lg border-l-4 border-accent-primary group-hover:border-accent-secondary transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/10 via-transparent to-accent-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <div className="relative z-10 text-center space-y-2">
-                <div className="text-4xl mb-2">👨‍💻</div>
-                <span className="text-neutral-text-disabled text-xs uppercase tracking-wider block group-hover:text-accent-primary transition-colors duration-300">Photo</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Enhanced Content */}
-          <div className="space-y-8 animate-slide-up">
+      <div className="max-w-4xl mx-auto relative z-10">
+        {/* Enhanced Content */}
+        <div className="space-y-8 animate-slide-up">
             <div className="space-y-6">
               <p className="text-lg md:text-xl text-neutral-text-medium leading-relaxed">
                 I'm a <span className="text-accent-primary font-semibold relative inline-block">
@@ -133,7 +121,6 @@ const About = () => {
               </a>
             </div>
           </div>
-        </div>
       </div>
     </section>
   )

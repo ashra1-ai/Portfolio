@@ -103,23 +103,17 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column - Visual Element / Stats */}
+          {/* Right Column - Stats */}
           <div className="hidden lg:block relative animate-slide-up" style={{ animationDelay: '0.5s' }}>
-            <div className="relative">
+            <div className="relative space-y-6">
               {/* Large Number Display */}
-              <div className="space-y-8">
-                <div className="card-1dp p-8 border-l-4 border-accent-primary">
-                  <div className="text-6xl font-black text-accent-primary mb-2">5+</div>
-                  <div className="text-neutral-text-medium text-sm uppercase tracking-wider">Projects Built</div>
-                </div>
-                <div className="card-1dp p-8 border-l-4 border-accent-secondary ml-8">
-                  <div className="text-6xl font-black text-accent-secondary mb-2">3+</div>
-                  <div className="text-neutral-text-medium text-sm uppercase tracking-wider">Years Experience</div>
-                </div>
-                <div className="card-1dp p-8 border-l-4 border-accent-tertiary">
-                  <div className="text-6xl font-black text-accent-tertiary mb-2">100%</div>
-                  <div className="text-neutral-text-medium text-sm uppercase tracking-wider">Dedicated</div>
-                </div>
+              <div className="card-1dp p-6 border-l-4 border-accent-primary">
+                <div className="text-5xl font-black text-accent-primary mb-2">5+</div>
+                <div className="text-neutral-text-medium text-sm uppercase tracking-wider">Projects Built</div>
+              </div>
+              <div className="card-1dp p-6 border-l-4 border-accent-secondary ml-8">
+                <div className="text-5xl font-black text-accent-secondary mb-2">3+</div>
+                <div className="text-neutral-text-medium text-sm uppercase tracking-wider">Years Experience</div>
               </div>
             </div>
           </div>

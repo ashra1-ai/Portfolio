@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
       
-      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'certifications', 'blogs', 'contact']
+      const sections = ['home', 'about', 'skills', 'projects', 'experience', 'certifications', 'blogs', 'linkedin-posts', 'contact']
       const scrollPos = window.scrollY + 100
       
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -34,6 +34,7 @@ const Navbar = () => {
     { name: 'Experience', href: '#experience' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Blogs', href: '#blogs' },
+    { name: 'LinkedIn', href: '#linkedin-posts' },
     { name: 'Contact', href: '#contact' },
   ]
 

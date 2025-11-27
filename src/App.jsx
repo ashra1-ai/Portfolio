@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Certifications from './components/Certifications'
 import Blogs from './components/Blogs'
+import LinkedInPosts from './components/LinkedInPosts'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -21,6 +22,7 @@ function App() {
       <Experience />
       <Certifications />
       <Blogs />
+      <LinkedInPosts />
       <Contact />
       <Footer />
     </div>

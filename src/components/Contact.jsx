@@ -79,8 +79,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Email sending failed:', error)
       const errorMessage = error.message?.includes('not configured') 
-        ? 'Email service not configured yet. Please contact me directly at kanishkashra@gmail.com'
-        : 'Failed to send message. Please try again or contact me directly at kanishkashra@gmail.com'
+        ? 'Email service is currently being set up. For immediate contact, please email me directly at kanishkashra@gmail.com or use the email link above.'
+        : 'Unable to send message at this time. Please email me directly at kanishkashra@gmail.com or try again later.'
       setErrors({ submit: errorMessage })
     } finally {
       setIsSubmitting(false)
