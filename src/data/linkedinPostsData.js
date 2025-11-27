@@ -15,30 +15,31 @@ export const linkedInPosts = [
     link: 'https://www.linkedin.com/in/kanishkashra/', // Replace with actual post URL
     color: 'accent-primary',
   },
-  {
-    id: 2,
-    title: 'Exploring Adversarial Robustness in Deep Learning',
-    content: 'Just published a deep dive into adversarial attacks and defense mechanisms in neural networks. Exploring how we can build more robust ML models that are resistant to adversarial examples. Check out the full article for practical applications and research insights.',
-    image: `${import.meta.env.BASE_URL}images/linkedin-post-2.jpg`,
-    date: 'Dec 2024',
-    likes: 38,
-    comments: 15,
-    shares: 5,
-    link: 'https://www.linkedin.com/in/kanishkashra/', // Replace with actual post URL
-    color: 'accent-secondary',
-  },
-  {
-    id: 3,
-    title: 'Building Scalable ML Systems for Production',
-    content: 'Sharing best practices for deploying machine learning models at scale. From performance optimization to monitoring and infrastructure considerations - here\'s what I\'ve learned building production ML systems.',
-    image: `${import.meta.env.BASE_URL}images/linkedin-post-3.jpg`,
-    date: 'Nov 2024',
-    likes: 52,
-    comments: 20,
-    shares: 10,
-    link: 'https://www.linkedin.com/in/kanishkashra/', // Replace with actual post URL
-    color: 'accent-tertiary',
-  },
+  // Add more posts below when you have the images
+  // {
+  //   id: 2,
+  //   title: 'Exploring Adversarial Robustness in Deep Learning',
+  //   content: 'Just published a deep dive into adversarial attacks and defense mechanisms in neural networks. Exploring how we can build more robust ML models that are resistant to adversarial examples. Check out the full article for practical applications and research insights.',
+  //   image: `${import.meta.env.BASE_URL}images/linkedin-post-2.jpg`,
+  //   date: 'Dec 2024',
+  //   likes: 38,
+  //   comments: 15,
+  //   shares: 5,
+  //   link: 'https://www.linkedin.com/in/kanishkashra/',
+  //   color: 'accent-secondary',
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Building Scalable ML Systems for Production',
+  //   content: 'Sharing best practices for deploying machine learning models at scale. From performance optimization to monitoring and infrastructure considerations - here\'s what I\'ve learned building production ML systems.',
+  //   image: `${import.meta.env.BASE_URL}images/linkedin-post-3.jpg`,
+  //   date: 'Nov 2024',
+  //   likes: 52,
+  //   comments: 20,
+  //   shares: 10,
+  //   link: 'https://www.linkedin.com/in/kanishkashra/',
+  //   color: 'accent-tertiary',
+  // },
   // Add more posts below by copying the structure above
   // {
   //   id: 4,
