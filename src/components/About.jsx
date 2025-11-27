@@ -98,13 +98,14 @@ const About = () => {
               ))}
             </div>
 
-            {/* Enhanced Download CV Button */}
+            {/* Enhanced Download Resume Button */}
             <div className="pt-6">
               <a
-                href="#"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                download="Kanishk_Ashra_Resume.pdf"
                 className="inline-flex items-center gap-3 px-8 py-4 btn-primary group"
               >
-                <span>Download CV</span>
+                <span>Resume</span>
                 <svg
                   className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-300"
                   fill="none"

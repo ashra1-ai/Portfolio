@@ -51,8 +51,14 @@ const Contact = () => {
       // Check if EmailJS is configured
       if (!serviceID || !templateID || !publicKey || 
           serviceID === 'YOUR_SERVICE_ID' || 
+          serviceID === 'service_xxxxxxxxx' ||
+          serviceID.startsWith('YOUR_') ||
           templateID === 'YOUR_TEMPLATE_ID' || 
-          publicKey === 'YOUR_PUBLIC_KEY') {
+          templateID === 'template_xxxxxxxxx' ||
+          templateID.startsWith('YOUR_') ||
+          publicKey === 'YOUR_PUBLIC_KEY' ||
+          publicKey === 'xxxxxxxxxxxxxxxxxxxxx' ||
+          publicKey.startsWith('YOUR_')) {
         throw new Error('EmailJS not configured. Please set up EmailJS credentials. See EMAILJS_SETUP.md for instructions.')
       }
       
@@ -61,11 +67,12 @@ const Contact = () => {
         serviceID,
         templateID,
         {
-          from_name: formData.name,
+          name: formData.name,
+          message: formData.message,
+          time: new Date().toLocaleString(),
+          // Additional fields for reference
           from_email: formData.email,
           subject: formData.subject,
-          message: formData.message,
-          to_email: 'kanishkashra@gmail.com',
         },
         publicKey
       )
