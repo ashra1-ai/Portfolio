@@ -31,16 +31,16 @@ const About = () => {
                 <span className="text-accent-secondary font-semibold relative inline-block">
                   <span className="relative z-10">University of Alberta</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-accent-secondary/20 -z-0"></span>
-                </span>, specializing in{' '}
+                </span>, graduating in{' '}
                 <span className="text-accent-tertiary font-semibold relative inline-block">
-                  <span className="relative z-10">Machine Learning & AI</span>
+                  <span className="relative z-10">December 2026</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-accent-tertiary/30 -z-0"></span>
                 </span>.
               </p>
               <p className="text-lg md:text-xl text-neutral-text-medium leading-relaxed">
                 I build <span className="text-accent-primary font-medium">AI-powered applications</span>, develop{' '}
                 <span className="text-accent-secondary font-medium">automation solutions</span>, and create{' '}
-                <span className="text-accent-tertiary font-medium">data-driven systems</span> that solve real-world problems.
+                <span className="text-accent-tertiary font-medium">data-driven systems</span> that solve real-world problems. My research focuses on adversarial robustness and geometric optimization in machine learning.
               </p>
               
               {/* Enhanced Code Block */}

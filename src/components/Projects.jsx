@@ -6,10 +6,10 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'EGEAT-Experiments',
+      title: 'EGEAT: Exact Geometric Ensemble Adversarial Training',
       description:
-        'Research experiments focusing on adversarial robustness and optimization at the intersection of machine learning theory and practical applications. Building intelligent systems that connect theory with real-world impact.',
-      tags: ['Python', 'Machine Learning', 'Research', 'Optimization'],
+        'Research experiments focusing on adversarial robustness and optimization at the intersection of machine learning theory and practical applications. Leveraged convex duality to eliminate iterative inner maximization, achieving exact first-order adversarial optimization. Implemented gradient-space decorrelation techniques that reduce adversarial transferability by up to 40% across different model architectures and datasets. Developed ensemble smoothing methods that enhance robust generalization on MNIST, CIFAR-10, and DREBIN datasets.',
+      tags: ['Python', 'Machine Learning', 'Research', 'Optimization', 'PyTorch', 'Adversarial ML'],
       github: 'https://github.com/ashra1-ai/EGEAT-Experiments',
       demo: null,
       color: 'accent-primary',
@@ -35,8 +35,8 @@ const Projects = () => {
     {
       title: 'Aura Farming — AI-Powered IoT Irrigation',
       description:
-        'NaTHacks 2025 Winner. Multi-zone IoT irrigation system using ESP32 boards collecting 5k+ soil moisture and rainfall telemetry points in real time. Features automated irrigation logic with servo-controlled sprinklers and Supabase-backed pipeline.',
-      tags: ['Python', 'ESP32', 'React', 'Django', 'Supabase', 'IoT'],
+        'NaTHacks 2025 Winner. Built a multi-zone IoT irrigation system using ESP32 boards to collect 5k+ soil moisture and rainfall telemetry points in real time. Designed automated irrigation logic with servo-controlled sprinklers, reducing manual adjustments by 60%. Architected a Supabase-backed pipeline for telemetry storage, device commands, and real-time triggers. Developed React dashboards and Django APIs for live monitoring, threshold configuration, and override controls.',
+      tags: ['Python', 'ESP32', 'React', 'Django', 'Supabase', 'IoT', 'AIoT', 'AgriTech'],
       github: 'https://github.com/ashra1-ai/Aura-Farming',
       demo: null,
       color: 'accent-secondary',
@@ -44,7 +44,7 @@ const Projects = () => {
     {
       title: 'Conditional GAN (CGAN) — MNIST Dataset',
       description:
-        'Implemented a Conditional GAN in PyTorch to generate class-conditioned handwritten digits with stable training across 60+ epochs. Improved generator convergence using label embeddings and conducted latent-space analysis.',
+        'Implemented a Conditional GAN in PyTorch to generate class-conditioned handwritten digits with stable training across 60+ epochs. Improved generator convergence using label embeddings, tuned loss functions, and discriminator regularization. Conducted latent-space analysis to visualize class-vector influence on generative behavior and diversity.',
       tags: ['Python', 'PyTorch', 'Deep Learning', 'GANs', 'MNIST'],
       github: 'https://github.com/ashra1-ai/cgan-mnist',
       demo: null,
@@ -58,19 +58,19 @@ const Projects = () => {
         text: 'text-accent-primary',
         border: 'border-accent-primary',
         bg: 'bg-accent-primary',
-        shadow: 'rgba(99,102,241,0.3)',
+        shadow: 'rgba(0,245,212,0.3)',
       },
       'accent-secondary': {
         text: 'text-accent-secondary',
         border: 'border-accent-secondary',
         bg: 'bg-accent-secondary',
-        shadow: 'rgba(16,185,129,0.3)',
+        shadow: 'rgba(56,189,248,0.3)',
       },
       'accent-tertiary': {
         text: 'text-accent-tertiary',
         border: 'border-accent-tertiary',
         bg: 'bg-accent-tertiary',
-        shadow: 'rgba(245,158,11,0.3)',
+        shadow: 'rgba(139,92,246,0.3)',
       },
     }
     return colors[color] || colors['accent-primary']
@@ -101,7 +101,7 @@ const Projects = () => {
             return (
               <div
                 key={index}
-                className="card-interactive group relative overflow-hidden"
+                className="glass-card-hover group relative overflow-hidden p-6"
                 onMouseEnter={() => setHoveredProject(index)}
                 onMouseLeave={() => setHoveredProject(null)}
                 style={{
@@ -115,11 +115,10 @@ const Projects = () => {
                     : project.color === 'accent-secondary'
                     ? 'from-accent-secondary/10 via-transparent to-accent-tertiary/10'
                     : 'from-accent-secondary/10 via-transparent to-accent-primary/10'
-                } opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+                } opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`}></div>
 
-
-                <div className="relative z-10">
-                  <div className="mb-6">
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className="mb-6 flex-1">
                     <h3 className={`text-xl md:text-2xl font-bold mb-4 ${colors.text} transition-colors duration-300`}>
                       {project.title}
                     </h3>
@@ -150,6 +149,7 @@ const Projects = () => {
                         <span
                           key={tagIndex}
                           className={`px-3 py-1.5 border ${getTagClasses()} text-xs font-medium rounded-md transition-all duration-300`}
+                          title={tag}
                         >
                           {tag}
                         </span>
@@ -158,7 +158,7 @@ const Projects = () => {
                   </div>
 
                   {/* Enhanced Links */}
-                  <div className="pt-6 border-t border-dark-border/50 space-y-3">
+                  <div className="pt-6 border-t border-dark-border/50 space-y-3 mt-auto">
                     {project.insights && (
                       <a
                         href="#research-article"

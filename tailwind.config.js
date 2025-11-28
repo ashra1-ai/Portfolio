@@ -14,19 +14,19 @@ function flattenColors(obj, prefix = '') {
 
 const colorGroups = {
   dark: {
-    bg: '#1a1a1a',        // Matte grey background
-    surface: '#242424',    // Matte grey surface
-    'surface-1dp': '#2a2a2a',  // Matte grey elevated
-    'surface-6dp': '#2f2f2f',  // Matte grey more elevated
-    'surface-8dp': '#333333',  // Matte grey even more elevated
-    'surface-12dp': '#383838', // Matte grey highest
-    border: '#2a2a2a',
+    bg: '#0f172a',        // Slate-900 background
+    surface: '#1e293b',    // Slate-800 surface
+    'surface-1dp': '#334155',  // Slate-700 elevated
+    'surface-6dp': '#475569',  // Slate-600 more elevated
+    'surface-8dp': '#64748b',  // Slate-500 even more elevated
+    'surface-12dp': '#94a3b8', // Slate-400 highest
+    border: '#334155',
   },
   accent: {
-    primary: '#3b82f6',   // Blue (primary)
-    secondary: '#10b981',  // Green (secondary)
-    tertiary: '#f59e0b',  // Amber (tertiary)
-    quaternary: '#8b5cf6', // Purple (quaternary)
+    primary: '#00f5d4',   // Cyan/Teal (neon primary)
+    secondary: '#38bdf8',  // Sky Blue (neon secondary)
+    tertiary: '#8b5cf6',  // Purple (tertiary)
+    quaternary: '#f59e0b', // Amber (quaternary)
   },
   neutral: {
     text: '#e5e5e5',      // Whitish grey text

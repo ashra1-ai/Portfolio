@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="space-y-6">
               <div className="inline-block">
                 <span className="text-sm md:text-base text-accent-primary font-mono tracking-wider uppercase mb-4 block animate-slide-up" style={{ animationDelay: '0.1s' }}>
-                  Software Engineer & ML Developer
+                  Computer Science Student | ML Researcher
                 </span>
               </div>
               
@@ -36,12 +36,15 @@ const Hero = () => {
                 <span className="block text-accent-primary animate-slide-up" style={{ animationDelay: '0.3s' }}>Ashra</span>
               </h1>
               
-              <div className="space-y-4 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-                <p className="text-xl md:text-2xl text-neutral-text-medium leading-relaxed font-light">
-                  Building <span className="text-accent-primary font-semibold">intelligent systems</span> that solve real-world problems
+              <div 
+                className="space-y-4 animate-slide-up" 
+                style={{ animationDelay: '0.4s' }}
+              >
+                <p className="text-2xl md:text-3xl lg:text-4xl text-neutral-text leading-relaxed font-light">
+                  Building <span className="bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent font-semibold">Robust & Ethical AI Systems</span>
                 </p>
                 <p className="text-base md:text-lg text-neutral-text-medium leading-relaxed">
-                  Specializing in ML/AI, automation, and scalable backend architecture
+                  I build AI systems that balance geometric rigor with real-world efficiency — from ensemble adversarial training to IoT-driven sustainability.
                 </p>
               </div>
             </div>
@@ -65,8 +68,8 @@ const Hero = () => {
                     href={social.href}
                     target={social.href.startsWith('http') ? '_blank' : undefined}
                     rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className={`p-3 rounded-lg bg-dark-surface-1dp border ${colorClasses[social.color]} 
-                      hover:scale-110 hover:bg-dark-surface-6dp
+                    className={`p-3 rounded-lg glass-card-hover border ${colorClasses[social.color]} 
+                      hover:scale-110
                       transition-all duration-300`}
                     aria-label={social.label}
                   >
@@ -79,24 +82,24 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-slide-up" style={{ animationDelay: '0.8s' }}>
               <a 
-                href="#projects" 
+                href="#research" 
                 className="btn-primary group relative overflow-hidden text-center"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
-                  View Work
+                  View Research
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </span>
               </a>
               <a 
-                href="#contact" 
+                href="#projects" 
                 className="btn-secondary group relative overflow-hidden text-center"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
-                  Get In Touch
-                  <svg className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  Explore Projects
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </span>
               </a>

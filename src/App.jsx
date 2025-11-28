@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import ResearchHighlights from './components/ResearchHighlights'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
-import Certifications from './components/Certifications'
+import Education from './components/Education'
+import TechnicalSkills from './components/TechnicalSkills'
 import Blogs from './components/Blogs'
-import LinkedInPosts from './components/LinkedInPosts'
+import Achievements from './components/Achievements'
 import ResearchArticle from './components/ResearchArticle'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -39,11 +41,13 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <ResearchHighlights />
       <Projects />
       <Experience />
-      <Certifications />
+      <Education />
+      <TechnicalSkills />
       <Blogs />
-      <LinkedInPosts />
+      <Achievements />
       <Contact />
       <Footer />
     </div>
