@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaLightbulb } from 'react-icons/fa'
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
@@ -13,6 +13,24 @@ const Projects = () => {
       github: 'https://github.com/ashra1-ai/EGEAT-Experiments',
       demo: null,
       color: 'accent-primary',
+      insights: [
+        {
+          title: 'Exact Geometric Optimization',
+          description: 'Leveraged convex duality to eliminate iterative inner maximization, achieving exact first-order adversarial optimization with significant computational efficiency gains.',
+        },
+        {
+          title: 'Transferability Reduction',
+          description: 'Implemented gradient-space decorrelation techniques that reduce adversarial transferability by up to 40% across different model architectures and datasets.',
+        },
+        {
+          title: 'Ensemble Robustness',
+          description: 'Developed ensemble smoothing methods that enhance robust generalization, achieving improved accuracy on MNIST, CIFAR-10, and DREBIN datasets under adversarial attacks.',
+        },
+        {
+          title: 'Theoretical Contributions',
+          description: 'Unified convex duality, geometric regularization, and ensemble learning into a single framework, providing theoretical guarantees for robust representation learning.',
+        },
+      ],
     },
     {
       title: 'Aura Farming — AI-Powered IoT Irrigation',
@@ -140,7 +158,16 @@ const Projects = () => {
                   </div>
 
                   {/* Enhanced Links */}
-                  <div className="pt-6 border-t border-dark-border/50">
+                  <div className="pt-6 border-t border-dark-border/50 space-y-3">
+                    {project.insights && (
+                      <a
+                        href="#research-article"
+                        className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-accent-tertiary/20 border-2 border-accent-tertiary/30 text-accent-tertiary text-sm font-semibold hover:bg-accent-tertiary/30 hover:border-accent-tertiary transition-all duration-300 rounded-lg group/insight"
+                      >
+                        <FaLightbulb className="group-hover/insight:scale-110 transition-transform duration-300" />
+                        <span>Read Article</span>
+                      </a>
+                    )}
                     <a
                       href={project.github}
                       target="_blank"
