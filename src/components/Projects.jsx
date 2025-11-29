@@ -40,6 +40,7 @@ const Projects = () => {
       github: 'https://github.com/ashra1-ai/Aura-Farming',
       demo: null,
       color: 'accent-secondary',
+      articleLink: '#aura-farming',
     },
     {
       title: 'Conditional GAN (CGAN) — MNIST Dataset',
@@ -49,6 +50,7 @@ const Projects = () => {
       github: 'https://github.com/ashra1-ai/cgan-mnist',
       demo: null,
       color: 'accent-tertiary',
+      articleLink: '#cgan-mnist',
     },
   ]
 
@@ -80,16 +82,13 @@ const Projects = () => {
     <section id="projects" className="section-container relative bg-dark-bg">
 
       <div className="mb-20 animate-fade-in relative z-10">
-        <div className="flex items-center gap-6 mb-8">
+        <div className="flex items-center justify-center gap-6 mb-8">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-primary to-transparent"></div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-neutral-text tracking-tight whitespace-nowrap">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-neutral-text tracking-tight whitespace-nowrap text-center">
             Featured <span className="text-accent-primary">Projects</span>
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-secondary to-transparent"></div>
         </div>
-        <p className="text-neutral-text-medium max-w-2xl text-lg leading-relaxed">
-          AI-powered applications and intelligent systems I've developed
-        </p>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">
@@ -159,10 +158,16 @@ const Projects = () => {
 
                   {/* Enhanced Links */}
                   <div className="pt-6 border-t border-dark-border/50 space-y-3 mt-auto">
-                    {project.insights && (
+                    {(project.insights || project.articleLink) && (
                       <a
-                        href="#research-article"
-                        className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-accent-tertiary/20 border-2 border-accent-tertiary/30 text-accent-tertiary text-sm font-semibold hover:bg-accent-tertiary/30 hover:border-accent-tertiary transition-all duration-300 rounded-lg group/insight"
+                        href={project.articleLink || (project.insights ? '#research-article' : '#')}
+                        className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 border-2 text-sm font-semibold transition-all duration-300 rounded-lg group/insight ${
+                          project.color === 'accent-primary'
+                            ? 'bg-accent-primary/20 border-accent-primary/30 text-accent-primary hover:bg-accent-primary/30 hover:border-accent-primary'
+                            : project.color === 'accent-secondary'
+                            ? 'bg-accent-secondary/20 border-accent-secondary/30 text-accent-secondary hover:bg-accent-secondary/30 hover:border-accent-secondary'
+                            : 'bg-accent-tertiary/20 border-accent-tertiary/30 text-accent-tertiary hover:bg-accent-tertiary/30 hover:border-accent-tertiary'
+                        }`}
                       >
                         <FaLightbulb className="group-hover/insight:scale-110 transition-transform duration-300" />
                         <span>Read Article</span>

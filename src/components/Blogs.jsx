@@ -56,16 +56,13 @@ const Blogs = () => {
   return (
     <section id="blogs" className="section-container relative bg-dark-surface">
       <div className="mb-20 animate-fade-in relative z-10">
-        <div className="flex items-center gap-6 mb-8">
+        <div className="flex items-center justify-center gap-6 mb-8">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-primary to-transparent"></div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-neutral-text tracking-tight whitespace-nowrap">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-neutral-text tracking-tight whitespace-nowrap text-center">
             <span className="text-accent-primary">Blogs</span> & Posts
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-secondary to-transparent"></div>
         </div>
-        <p className="text-neutral-text-medium max-w-2xl text-lg leading-relaxed">
-          My thoughts on AI, ML, and software engineering
-        </p>
       </div>
 
       <div className="max-w-6xl mx-auto relative z-10">

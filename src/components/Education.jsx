@@ -5,9 +5,9 @@ const Education = () => {
   return (
     <section id="education" className="section-container relative bg-dark-surface">
       <div className="mb-20 animate-fade-in relative z-10">
-        <div className="flex items-center gap-6 mb-8">
+        <div className="flex items-center justify-center gap-6 mb-8">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-primary to-transparent"></div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-neutral-text tracking-tight whitespace-nowrap">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-neutral-text tracking-tight whitespace-nowrap text-center">
             Education
           </h2>
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-secondary to-transparent"></div>
