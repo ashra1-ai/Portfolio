@@ -4,7 +4,7 @@ import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'
 const Experience = () => {
   const experiences = [
     {
-      title: 'Software Engineering & Automation Intern',
+      title: 'Summer Intern',
       company: 'University of Alberta - Residence Services',
       location: 'Edmonton, AB',
       period: 'Apr. 2025 – Aug. 2025',
@@ -15,18 +15,6 @@ const Experience = () => {
         'Standardized SOPs, compliance workflows, and documentation across 40+ buildings for audit readiness',
       ],
       color: 'accent-primary',
-    },
-    {
-      title: 'Technical Support Analyst',
-      company: 'University of Alberta Students\' Union',
-      location: 'Edmonton, AB',
-      period: 'Feb. 2025 – Apr. 2025',
-      achievements: [
-        'Diagnosed 200+ support issues using system logs, diagnostics tools, and endpoint performance metrics',
-        'Configured secure workstation environments with endpoint protection, network policies, and user access controls',
-        'Developed technical SOPs and troubleshooting guides, improving operational consistency and onboarding',
-      ],
-      color: 'accent-secondary',
     },
     {
       title: 'Software Developer',
